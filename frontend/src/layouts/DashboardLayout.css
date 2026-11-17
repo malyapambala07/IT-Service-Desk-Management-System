@@ -1,0 +1,35 @@
+
+.dashboard-layout {
+  min-height: 100vh;
+  background: #0b1120;
+}
+
+.main-content {
+  margin-left: 260px;
+  min-height: 100vh;
+  padding: 30px;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.sidebar-collapsed {
+  margin-left: 82px;
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 700px) {
+  .main-content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+
+  .main-content.sidebar-collapsed {
+    margin-left: 65px;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-content {
+    padding: 14px;
+  }
+}

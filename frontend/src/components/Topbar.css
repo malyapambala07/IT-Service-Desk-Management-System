@@ -1,0 +1,148 @@
+
+.topbar {
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 30px;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  backdrop-filter: blur(15px);
+  margin-bottom: 30px;
+}
+
+.topbar-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #94a3b8;
+  width: 350px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.topbar-search input {
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.topbar-search input::placeholder {
+  color: #64748b;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+}
+
+.notification-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.notification-btn:hover {
+  color: #ffffff;
+}
+
+.notification-dot {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  min-width: 8px;
+  min-height: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  background: #f43f5e;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #cbd5e1;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.profile-info {
+  min-width: 0;
+}
+
+.profile-info h4 {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 130px;
+}
+
+.profile-info p {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 3px;
+}
+
+@media (max-width: 700px) {
+  .topbar {
+    padding: 12px 18px;
+    min-height: 65px;
+    gap: 12px;
+  }
+
+  .topbar-search {
+    width: auto;
+    flex: 1;
+  }
+
+  .topbar-actions {
+    gap: 15px;
+  }
+
+  .profile-info h4 {
+    max-width: 90px;
+  }
+}
+
+@media (max-width: 450px) {
+  .topbar {
+    padding: 12px;
+  }
+
+  .topbar-search {
+    gap: 7px;
+  }
+
+  .topbar-search input {
+    font-size: 11px;
+  }
+
+  .topbar-actions {
+    gap: 10px;
+  }
+
+  .profile-info {
+    display: none;
+  }
+}

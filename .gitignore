@@ -1,0 +1,41 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Backend - Java / Maven
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Frontend - Node.js
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local application configuration and uploaded files
+backend/src/main/resources/application.properties
+backend/application-local.properties
+backend/uploads/
+
+!backend/src/main/resources/application-example.properties
+
+
+# Backup ZIP files
+*.zip
+
+# Root Node.js dependencies
+node_modules/

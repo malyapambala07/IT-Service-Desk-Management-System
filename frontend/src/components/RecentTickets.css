@@ -1,0 +1,141 @@
+
+.recent-tickets {
+  margin-top: 25px;
+  padding: 25px;
+  background: rgba(30, 41, 59, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.table-header h3 {
+  color: #ffffff;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.table-header p {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.view-all-btn {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  padding: 9px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.view-all-btn:hover {
+  background: rgba(59, 130, 246, 0.25);
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.recent-tickets table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+.recent-tickets th {
+  text-align: left;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+}
+
+.recent-tickets td {
+  padding: 17px 12px;
+  color: #cbd5e1;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  white-space: nowrap;
+}
+
+.recent-tickets tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.priority,
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.priority.high {
+  color: #fb923c;
+  background: rgba(249, 115, 22, 0.12);
+}
+
+.priority.medium {
+  color: #facc15;
+  background: rgba(234, 179, 8, 0.12);
+}
+
+.priority.low {
+  color: #4ade80;
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.priority.critical {
+  color: #fb7185;
+  background: rgba(244, 63, 94, 0.12);
+}
+
+.status.open {
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.status.in-progress {
+  color: #a78bfa;
+  background: rgba(139, 92, 246, 0.12);
+}
+
+.status.resolved {
+  color: #4ade80;
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.view-ticket-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #60a5fa;
+  cursor: pointer;
+}
+
+.view-ticket-btn:hover {
+  color: #ffffff;
+}
+.status.assigned {
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.status.closed {
+  color: #94a3b8;
+  background: rgba(148, 163, 184, 0.12);
+}

@@ -1,0 +1,257 @@
+
+.employees-page {
+  width: 100%;
+  color: #e2e8f0;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.add-employee-btn {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.add-employee-btn:hover {
+  transform: translateY(-2px);
+}
+
+.employee-summary {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 22px;
+  margin-bottom: 22px;
+  background: rgba(30, 41, 59, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  color: #60a5fa;
+}
+
+.employee-summary h2 {
+  font-size: 17px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.employee-summary p {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.employee-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  background: rgba(30, 41, 59, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: #94a3b8;
+}
+
+.employee-search input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.employee-search input::placeholder {
+  color: #64748b;
+}
+/* EMPLOYEE TABLE */
+
+.employee-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: rgba(30, 41, 59, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.employee-table th {
+  padding: 17px;
+  font-size: 12px;
+  color: #94a3b8;
+  background: rgba(15, 23, 42, 0.7);
+  font-weight: 600;
+}
+
+.employee-table td {
+  padding: 17px;
+  font-size: 13px;
+  color: #cbd5e1;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.employee-table tbody tr:hover {
+  background: rgba(59, 130, 246, 0.06);
+}
+
+.employee-status {
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.employee-status.active {
+  color: #4ade80;
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.employee-status.inactive {
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.12);
+}
+
+.no-employees {
+  text-align: center;
+  padding: 30px !important;
+  color: #94a3b8 !important;
+}
+/* ADD EMPLOYEE FORM */
+
+.employee-form-container {
+  padding: 25px;
+  margin-bottom: 22px;
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+}
+
+.employee-form-container h2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.employee-form-container form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.employee-form-container input {
+  padding: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: #0f172a;
+  color: #ffffff;
+  outline: none;
+  font-size: 13px;
+}
+
+.employee-form-container input:focus {
+  border-color: #3b82f6;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  grid-column: 1 / -1;
+}
+
+.save-employee-btn,
+.cancel-employee-btn {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.save-employee-btn {
+  background: #2563eb;
+}
+
+.cancel-employee-btn {
+  background: #475569;
+}
+
+@media (max-width: 600px) {
+  .employee-form-container form {
+    grid-template-columns: 1fr;
+  }
+}
+/* EDIT EMPLOYEE BUTTON */
+
+.edit-employee-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.edit-employee-btn:hover {
+  background: rgba(59, 130, 246, 0.3);
+  color: #ffffff;
+}
+
+/* EMPLOYEE ACTIONS */
+
+.employee-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete-employee-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.delete-employee-btn:hover {
+  background: rgba(239, 68, 68, 0.3);
+  color: #ffffff;
+}

@@ -1,0 +1,273 @@
+
+.sla-page {
+  padding: 30px;
+  color: #e5e7eb;
+}
+
+.sla-header {
+  margin-bottom: 28px;
+}
+
+.sla-header h1 {
+  font-size: 26px;
+  color: #f8fafc;
+  margin-bottom: 8px;
+}
+
+.sla-header p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.sla-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.sla-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 21px;
+  background: #111827;
+  border: 1px solid #263244;
+  border-radius: 12px;
+}
+
+.sla-icon {
+  width: 47px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.sla-icon.purple {
+  background: #35245c;
+  color: #b794f4;
+}
+
+.sla-icon.red {
+  background: #4c2028;
+  color: #f87171;
+}
+
+.sla-icon.orange {
+  background: #49301e;
+  color: #fb923c;
+}
+
+.sla-icon.green {
+  background: #174334;
+  color: #4ade80;
+}
+
+.sla-stat-card h3 {
+  font-size: 24px;
+  color: #f8fafc;
+  margin-bottom: 5px;
+}
+
+.sla-stat-card p {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.sla-policy-card,
+.sla-tickets-card {
+  background: #111827;
+  border: 1px solid #263244;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 25px;
+}
+
+.sla-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 23px;
+}
+
+.sla-heading-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #35245c;
+  color: #b794f4;
+  border-radius: 9px;
+}
+
+.sla-section-heading h2 {
+  color: #f8fafc;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.sla-section-heading p {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.sla-policy-table-wrapper,
+.sla-ticket-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.sla-policy-table,
+.sla-ticket-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.sla-policy-table th,
+.sla-ticket-table th {
+  text-align: left;
+  padding: 15px 12px;
+  color: #94a3b8;
+  font-size: 12px;
+  border-bottom: 1px solid #334155;
+  white-space: nowrap;
+}
+
+.sla-policy-table td,
+.sla-ticket-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #263244;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.sla-policy-table input {
+  width: 100px;
+  padding: 9px 10px;
+  border-radius: 7px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #f8fafc;
+  outline: none;
+}
+
+.sla-priority {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sla-priority.critical {
+  background: #4c2028;
+  color: #f87171;
+}
+
+.sla-priority.high {
+  background: #4a3020;
+  color: #fb923c;
+}
+
+.sla-priority.medium {
+  background: #493e20;
+  color: #facc15;
+}
+
+.sla-priority.low {
+  background: #1d3b35;
+  color: #4ade80;
+}
+
+.sla-save-area {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-top: 22px;
+}
+
+.sla-saved-message {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #4ade80;
+  font-size: 12px;
+}
+
+.sla-save-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 17px;
+  background: #7046c7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sla-save-btn:hover {
+  background: #8059d6;
+}
+
+.sla-ticket-id {
+  color: #a78bfa !important;
+  font-weight: 600;
+}
+
+.sla-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sla-status.overdue {
+  background: #4c2028;
+  color: #f87171;
+}
+
+.sla-status.at-risk {
+  background: #49301e;
+  color: #fb923c;
+}
+
+.sla-status.on-track {
+  background: #174334;
+  color: #4ade80;
+}
+
+@media (max-width: 1050px) {
+  .sla-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .sla-page {
+    padding: 18px;
+  }
+
+  .sla-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .sla-policy-card,
+  .sla-tickets-card {
+    padding: 16px;
+  }
+
+  .sla-save-area {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
